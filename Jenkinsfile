@@ -1,6 +1,6 @@
 node{
   stage ('scm checkout'){
-      git 'https://github.com/javahometech/my-app'	  
+      git 'https://github.com/vishnumalar/test1'	  
    }
   stage('compile'){
 	  def mvnHome = tool name: 'mvn', type: 'maven'
