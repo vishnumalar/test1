@@ -12,3 +12,4 @@ node{
   sh 'mv target/myweb-0.0.7-SNAPSHOT.war /root/tomcat8/webapps/'
 }
   }	
+}
