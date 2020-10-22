@@ -3,9 +3,11 @@ node{
       git 'https://github.com/vishnumalar/test1'	  
    }
   stage('compile'){
+	    sshagent(['jenkins']) {
 	  def mvnHome = tool name: 'mvn', type: 'maven'
 	  sh "${mvnHome}/bin/mvn package"
 	   }
+  }
 	   
   stage ('Deploy'){
   sshagent(['jenkins']) {
